@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="CustomTextInput" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="boxStrokeColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorOnBackground</item>
+        <item name="hintTextColor">@color/colorPrimary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+    </style>
+    <style name="CustomButton" parent="Widget.MaterialComponents.Button">
+        <!--<item name="android:backgroundTint" tools:targetApi="21">@color/colorPrimary</item>-->
+        <item name="android:textColor">@color/colorOnPrimary</item>
+        <item name="cornerRadius">12dp</item>
+        <!--<item name="android:elevation" tools:targetApi="21">4dp</item> -->
+    </style>
+</resources>

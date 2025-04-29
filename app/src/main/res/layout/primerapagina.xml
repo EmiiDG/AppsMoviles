@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="30dp"
     android:gravity="center"
-    android:background="#FFFFFF">
+    android:background="@color/colorBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,36 +14,50 @@
         android:orientation="vertical"
         android:layout_margin="8dp">
 
-        <EditText
-            android:id="@+id/editTextText"
+        <!-- Nombre de usuario -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/CustomTextInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nombre de usuario"
-            android:inputType="text"
-            android:layout_marginBottom="16dp"
-            android:padding="12dp"
-            android:textSize="16sp" />
+            android:hint="Nombre de usuario">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Contraseña con ícono -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp">
 
-            <EditText
-                android:id="@+id/editTextTextPassword2"
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/CustomTextInput"
+                android:id="@+id/TextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Contraseña"
-                android:inputType="textPassword"
-                android:textSize="16sp"
-                android:padding="12dp"
-                android:paddingEnd="50dp" />
+                android:hint="Contraseña">
 
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextTextPassword2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:paddingEnd="50dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
             <ImageButton
                 android:id="@+id/btnTogglePassword3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@id/editTextTextPassword2"
+                android:layout_alignEnd="@id/TextInputLayout"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="8dp"
                 android:background="@android:color/transparent"
@@ -51,6 +65,7 @@
                 android:src="@drawable/ic_eye_closed" />
         </RelativeLayout>
 
+        <!-- Mensaje de error -->
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
@@ -63,22 +78,22 @@
             android:layout_marginBottom="16dp"
             android:visibility="gone" />
 
+        <!-- Botón Ingresar -->
         <Button
             android:id="@+id/button3"
+            style="@style/CustomButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ingresar"
-            android:layout_marginBottom="12dp"
-            android:padding="12dp"
-            android:textSize="16sp" />
+            android:text="INGRESAR"
+            android:layout_marginBottom="12dp" />
 
+        <!-- Botón Registrarse -->
         <Button
             android:id="@+id/button"
+            style="@style/CustomButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registrarse"
-            android:padding="12dp"
-            android:textSize="16sp" />
+            android:text="REGISTRARSE" />
     </LinearLayout>
 
 </LinearLayout>

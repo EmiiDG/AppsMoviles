@@ -33,7 +33,7 @@ class HomeActivity : AppCompatActivity() {
             val ingresar = findViewById<Button>(R.id.button3)
             ingresar.setOnClickListener{
                 if(findViewById<EditText>(R.id.editTextText).text.toString() == "Juan Torres" && contraseña.text.toString() == "1234utn"){
-                val intent2 = Intent(this, bienvenidaActivity::class.java)
+                val intent2 = Intent(this, BienvenidaActivity::class.java)
                 startActivity(intent2)}else{
                     findViewById<TextView>(R.id.textView2).visibility = View.VISIBLE
                 }

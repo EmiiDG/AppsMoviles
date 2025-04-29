@@ -6,22 +6,26 @@
     android:orientation="vertical"
     android:padding="24dp"
     android:gravity="center"
-    android:background="#FFFFFF">
+    android:background="@color/colorBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/editTextText2"
+        <!-- Nombre -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/CustomTextInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nombre"
-            android:inputType="text"
-            android:textSize="16sp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp" />
+            android:hint="Nombre">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/textView"
@@ -32,17 +36,22 @@
             android:textStyle="bold"
             android:textSize="14sp"
             android:visibility="gone"
+            android:layout_marginTop="4dp"
             android:layout_marginBottom="16dp" />
 
-        <EditText
-            android:id="@+id/editTextTextEmailAddress"
+        <!-- Email -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/CustomTextInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:minHeight="48dp"
-            android:textSize="16sp" />
+            android:hint="Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/textView3"
@@ -53,27 +62,35 @@
             android:textStyle="bold"
             android:textSize="14sp"
             android:visibility="gone"
+            android:layout_marginTop="4dp"
             android:layout_marginBottom="16dp" />
 
+        <!-- Contraseña -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp">
 
-            <EditText
-                android:id="@+id/editTextTextPassword"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout3"
+                style="@style/CustomTextInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Contraseña"
-                android:inputType="textPassword"
-                android:textSize="16sp"
-                android:paddingEnd="50dp" />
+                android:hint="Contraseña">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:paddingEnd="50dp" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <ImageButton
                 android:id="@+id/btnTogglePassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@id/editTextTextPassword"
+                android:layout_alignEnd="@id/TextInputLayout3"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="8dp"
                 android:background="@android:color/transparent"
@@ -92,25 +109,32 @@
             android:visibility="gone"
             android:layout_marginBottom="16dp" />
 
+        <!-- Repetir contraseña -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp">
 
-            <EditText
-                android:id="@+id/editTextTextPassword3"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TextInputLayout2"
+                style="@style/CustomTextInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Repetir contraseña"
-                android:inputType="textPassword"
-                android:textSize="16sp"
-                android:paddingEnd="50dp" />
+                android:hint="Repetir contraseña">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextTextPassword3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:paddingEnd="50dp" />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <ImageButton
                 android:id="@+id/btnTogglePassword2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@id/editTextTextPassword3"
+                android:layout_alignEnd="@id/TextInputLayout2"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="8dp"
                 android:background="@android:color/transparent"
@@ -129,12 +153,13 @@
             android:visibility="gone"
             android:layout_marginBottom="24dp" />
 
+        <!-- Botón registrarse -->
         <Button
             android:id="@+id/button2"
+            style="@style/CustomButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registrarse"
-            android:textSize="16sp"
+            android:text="REGISTRARSE"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp" />
 
