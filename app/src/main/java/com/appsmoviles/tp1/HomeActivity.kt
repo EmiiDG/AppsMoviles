@@ -12,6 +12,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.text.InputType
 import android.widget.ImageButton
+import androidx.compose.ui.text.toLowerCase
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +33,7 @@ class HomeActivity : AppCompatActivity() {
 
             val ingresar = findViewById<Button>(R.id.button3)
             ingresar.setOnClickListener{
-                if(findViewById<EditText>(R.id.editTextText).text.toString() == "Juan Torres" && contraseña.text.toString() == "1234utn"){
+                if(findViewById<EditText>(R.id.editTextText).text.toString().lowercase() == "juan torres" && contraseña.text.toString() == "1234utn"){
                 val intent2 = Intent(this, BienvenidaActivity::class.java)
                 startActivity(intent2)}else{
                     findViewById<TextView>(R.id.textView2).visibility = View.VISIBLE

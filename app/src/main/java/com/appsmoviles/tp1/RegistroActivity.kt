@@ -100,6 +100,11 @@ class RegistroActivity : AppCompatActivity() {
             confirmar.setSelection(contraseña.text.length)
             isVisible2 = !isVisible2
         }
+
+        var backButton = findViewById<ImageButton>(R.id.btnBack)
+        backButton.setOnClickListener{
+            finish()
+        }
     }
 }
 
