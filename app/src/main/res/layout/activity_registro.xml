@@ -20,7 +20,8 @@
             android:hint="Nombre"
             android:inputType="text"
             android:textSize="16sp"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
 
         <TextView
             android:id="@+id/textView"
@@ -31,16 +32,17 @@
             android:textStyle="bold"
             android:textSize="14sp"
             android:visibility="gone"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="16dp" />
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:textSize="16sp"
-            android:layout_marginBottom="8dp" />
+            android:minHeight="48dp"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView3"
@@ -51,12 +53,12 @@
             android:textStyle="bold"
             android:textSize="14sp"
             android:visibility="gone"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="16dp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="16dp">
 
             <EditText
                 android:id="@+id/editTextTextPassword"
@@ -88,12 +90,12 @@
             android:textStyle="bold"
             android:textSize="14sp"
             android:visibility="gone"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="16dp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="16dp">
 
             <EditText
                 android:id="@+id/editTextTextPassword3"
@@ -125,14 +127,16 @@
             android:textStyle="bold"
             android:textSize="14sp"
             android:visibility="gone"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="24dp" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Registrarse"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
 
     </LinearLayout>
 
