@@ -1,56 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    android:id="@+id/main">
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
         <EditText
             android:id="@+id/editTextText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="Nombre de usuario"
-            android:ems="10"
             android:hint="Nombre de usuario"
             android:inputType="text"
-            android:text="" />
+            android:layout_marginBottom="12dp"
+            android:textSize="16sp" />
 
-        <EditText
-            android:id="@+id/editTextTextPassword2"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="Contraseña"
-            android:ems="10"
-            android:hint="Contraseña"
-            android:inputType="textPassword" />
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/editTextTextPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textSize="16sp"
+                android:paddingEnd="50dp" />
+
+            <ImageButton
+                android:id="@+id/btnTogglePassword3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/editTextTextPassword2"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Mostrar/Ocultar contraseña"
+                android:src="@drawable/ic_eye_closed" />
+        </RelativeLayout>
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:text="Los datos ingresados son incorrectos"
+            android:textColor="#B00020"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
             android:visibility="gone" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ingresar" />
+            android:text="Ingresar"
+            android:layout_marginBottom="8dp"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registrarse" />
-
+            android:text="Registrarse"
+            android:textSize="16sp" />
     </LinearLayout>
 
 </LinearLayout>
